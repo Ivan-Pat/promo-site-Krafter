@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script/checkWebp.js"></script>
+    <link rel="stylesheet" href="./style/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="body-wrapper">
+        <header class="header" >
+    <div class="header__warpper">
+        <div class="header__upper">
+            <picture><source srcset="images/logo.webp" type="image/webp"><img class="header-logo" src="images/logo.png" alt="logo"></picture>
+            <form class="header__select">
+                <i  class="icon-location"></i>
+                <div class="header__select--body select" id="select-1">
+        
+                    <button type="button" class="select__toggle" name="Moscow" value="Moscow" data-select="toggle" data-index="-1">Москва</button>
+                    
+                    <div class="select__dropdown">
+                    <ul class="select__options">
+                        <li class="select__option" data-select="option" data-value="Kaliningrad" data-index="1">Краснодар</li>
+                        <li class="select__option" data-select="option" data-value="Krasnodar" data-index="2">Краснодар</li>
+                        <li class="select__option" data-select="option" data-value="Vladivostok" data-index="3">Владивосток</li>
+                        <li class="select__option" data-select="option" data-value="Moscow" data-index="4">Москва</li>
+                    </ul>
+                    </div>
+                </div>
+            </form>
+            <div class="header__mail">
+                <a href="mailto:wwwwww@mail.com"><i class="icon-mail"></i>sale@hpl-krafter.ru</a>
+            </div>
+            <div class="callback">
+                <a href="tel:+7999999999"><i class="icon-mobile"></i>8(495) 134-27-28</a>
+                <button class="button-tel" type="button">Заказать звонок </button>
+            </div>
+            
+            <div class="networks">
+                <a href="#"><i class="icon-face2"></i></a>
+                <a href="#"><i class="icon-vk-1"></i></a>
+                <a href="#"><i class="icon-inst"></i></a>
+            </div>
+            <button class="burger">
+                <span></span>
+            </button>
+        </div>
+        <div class="header__lower">
+            <a class="header__catalog" href="#">Каталог продукции </a>
+            <nav class="header__nav">
+                 <ul>
+                    <li><a href="#">цены</a></li>
+                    <li><a href="#">проекты</a></li>
+                    <li><a href="#">о компании</a></li>
+                    <li><a href="#">контакты </a></li>
+                </ul>
+            </nav>
+            <a class="header__download" href="#"  download="#" >
+                <span><i class="icon-download"></i></span>
+                скачать каталог
+            </a>
+        </div>
+    </div>
+</header>
+        <section class="promo-slider swiper">
+    <div class="promo-slider__wrapper swiper-wrapper">
+
+        <div class="promo-slider__slide swiper-slide">
+            <div class="promo-slider__slide--title">
+
+                <h1>антивандальные конструкции из HPL пластика </h1>
+                <p>Компания Kermi разыгрывает 200 сертификатов на скидку в размере 
+                    -10% на покупку стальных панельных радиаторов Kermi.
+
+                    
+                </p>
+                <a href="#">подробнее...</a>
+                <!-- <picture><source srcset="images/slide-mobile.webp" type="image/webp"><img src="images/slide-mobile.png" alt="background"></picture> -->
+            </div>
+
+            <picture><source srcset="images/slide.webp" type="image/webp"><img src="images/slide.png" alt="background"></picture>
+        </div>
+
+        <div class="promo-slider__slide swiper-slide">
+            <div class="promo-slider__slide--title">
+
+                <h1>антивандальные конструкции из HPL пластика </h1>
+                <p>Компания Kermi разыгрывает 200 сертификатов на скидку в размере 
+                    -10% на покупку стальных панельных радиаторов Kermi.
+
+                    
+                </p>
+                <a href="#">подробнее...</a>
+                <picture><source srcset="images/slide.webp" type="image/webp"><img src="images/slide.png" alt="background"></picture>
+            </div>
+        </div>
+
+        <div class="promo-slider__slide swiper-slide">
+            <div class="promo-slider__slide--title">
+
+                <h1>антивандальные конструкции из HPL пластика </h1>
+                <p>Компания Kermi разыгрывает 200 сертификатов на скидку в размере 
+                    -10% на покупку стальных панельных радиаторов Kermi.
+
+                    
+                </p>
+                <a href="#">подробнее...</a>
+                <picture><source srcset="images/slide.webp" type="image/webp"><img src="images/slide.png" alt="background"></picture>
+            </div>
+        </div>
+
+        
+
+    </div>
+    
+    <div class="swiper-pagination promo-slider__pagination"></div>
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev promo-slider__prev"></div>
+    <div class="swiper-button-next promo-slider__next"></div>
+</section>
+
+        <footer class="footer">
+    <div class="footer__upper">
+        <div class="footer__upper--box">
+            <picture><source srcset="images/footer-bg-1.webp" type="image/webp"><img src="images/footer-bg-1.png" alt="background"></picture>
+        </div>
+        <div class="footer__upper--container">
+
+            <picture><source srcset="images/logo-w.webp" type="image/webp"><img src="images/logo-w.png" alt="logo" class="footer__logo"></picture>
+
+            <div class="footer__subscribe">
+                <div class="footer__subscribe--title">
+                    <h4>подпишись на рассылку</h4>
+                    <p>и будь в курсе всех новинок</p>
+                </div>
+                <form class="footer__form">
+                    <i class="icon-mail"></i>
+                    <input class="footer__form--input" type="email" name="email" id="email-1">
+                    <button class="footer__form--btn" type="button" >подписаться</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer__upper--box">
+            <picture><source srcset="images/footer-bg-2.webp" type="image/webp"><img src="images/footer-bg-2.png" alt="background" media="(min-width: 1200px)"></picture>
+        </div>
+    </div>
+    <div class="footer__body">
+        <div class="footer__body--wrapper">
+            <div class="footer__body--about">
+                <h4 class="footer-body-title">О нас<i class="icon-left3"></i></h4>
+                <ul hidden>
+                    <li><a href="#">Цены</a></li>
+                    <li><a href="#">Проекты</a></li>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer__body--catalog">
+                <h4 class="footer-body-title">Каталог<i class="icon-left3"></i></h4>
+                <ul hidden>
+                    <li><a href="#">Сантехнические перегоридки</a></li>
+                    <li><a href="#">Душевые перегородки</a></li>
+                    <li><a href="#">Санитарные пропусники</a></li>
+                    <li><a href="#">Мебель из phl</a></li>
+                    <li><a href="#">Распил и обработка hpl</a></li>
+                    <li><a href="#">Детские туалетные прергородки</a></li>
+                </ul>
+            </div>
+            <div class="footer__body--project">
+                <h4 class="footer-body-title">Проекты<i class="icon-left3"></i></h4>
+                <ul hidden>
+                    <li><a href="#">Облицовка стен</a></li>
+                    <li><a href="#">Фасадные системы hpl</a></li>
+                    <li><a href="#">Нестандартные системы hpl</a></li>
+                    <li><a href="#">Двери межкомнатные из hpl</a></li>
+                    <li><a href="#">Готовая авторская мебель Krafter</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer__bottom">
+        <div class="footer__bottom--wrapper">
+            <div class="footer__bottom--container">
+                <span><i class="icon-copyright"></i> 2022 Krafter</span>
+            </div>
+            <div class="callback">
+                <a href="tel:+7999999999"><i class="icon-mobile"></i>8(495) 134-27-28</a>
+                <button class="button-tel button-tel--footer " type="button">Заказать звонок</button>
+            </div>
+            <div class="networks networks--footer">
+                <a href="#"><i class="icon-face2"></i></a>
+                <a href="#"><i class="icon-vk-1"></i></a>
+                <a href="#"><i class="icon-inst"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+    </div>
+    
+
+    <script src="./script/main.js" ></script>
+</body>
+</html>

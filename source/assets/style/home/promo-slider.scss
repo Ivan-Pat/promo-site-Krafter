@@ -1,0 +1,132 @@
+.promo-slider {
+    max-width: $maxWidthWindow;
+    margin: 0 auto;
+}
+.promo-slider__wrapper {
+}
+
+.promo-slider__slide {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: rgba($color: #424242, $alpha: 0.4);
+    }
+    
+    @include minLG {
+        // justify-content: center;
+        height: min(568px, 32vw);
+        
+    }
+
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -2;
+        object-fit: cover;
+    }
+
+}
+
+.promo-slider__slide--title {
+    padding: 10px;
+    margin-left: max(20px, (100% - 500px) / 2.5 );
+    @include minMD {
+        
+    }
+    @include minLG {
+        margin-left: max(20px, (100% - 500px) / 2.9 );
+        // margin: 0 0 0 0;
+        max-width: $maxWidht;
+    }
+
+    h1 {
+        @include font-size(2, 20);
+        @include font($fontGot, 900);
+        max-width: max(250px, 80vw);
+        max-height: 120px;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        text-align: start;
+        overflow: hidden;
+        color: #fff;
+
+        @include minMD {
+            max-width: 500px
+        }
+        @include minVal($maxWidht) {
+            font-size: 3rem;
+            max-width: 550px;
+            max-height: 200px;
+            font-weight: black;
+        }
+    }
+    p {
+        @include font-size(1.2, 16);
+        @include font($fontGot, 400);
+        max-width: max(250px, 75vw);
+        max-height: 130px;
+        word-wrap: break-word;
+        text-align: justify;
+        margin-bottom: 15px;
+        color: #fff;
+        overflow: hidden;
+
+        @include minMD {
+            max-width: 450px
+        }
+        @include minLG {
+            max-width: 550px;
+        }
+
+    }
+    a {
+        display: inline-block;
+        @include font-size(1.2, 16);
+        @include font($fontGot, 400);
+        text-transform: uppercase;
+        margin-bottom: 15px;
+        max-height: 2rem;
+        max-width: 250px;
+        overflow: hidden;
+        color: #fff;
+    }
+}
+ .promo-slider__pagination
+ .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    color: #fff;
+}
+
+.promo-slider__pagination
+.swiper-pagination-bullet-active {
+    background: $colorYellow;
+}
+
+.promo-slider__prev {
+    left: 40px;
+    color: #fff;
+    font-weight: bolder;
+}
+
+.promo-slider__next {
+    right: 40px;
+    color: #fff;
+    font-weight: bolder;
+}

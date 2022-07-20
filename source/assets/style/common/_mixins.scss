@@ -1,0 +1,115 @@
+@mixin minSM {
+    @media (min-width: 540px) {
+        @content;
+    }
+ }
+ @mixin minMD {
+    @media (min-width: 720px) {
+        @content;
+    }
+ }
+@mixin minLG {
+    @media (min-width: 960px) {
+        @content;
+    }
+ }
+ @mixin minVal($resWidth) {
+    @media (min-width: $resWidth) {
+        @content;
+    }
+ }
+
+ //===================================
+@mixin font($a, $b) {
+    font-family: $a;
+    font-weight: $b;
+	
+}
+
+
+ //===================================
+ @mixin scrollbar {
+	& ::-moz-scrollbar {
+		@content;
+	}
+	& ::-webkit-scrollbar {
+		@content;
+	}
+	& ::scrollbar {
+		@content;
+	}
+}
+
+@mixin scrollbar-track {
+	& ::-moz-scrollbar-track {
+		@content;
+	}
+	& ::-webkit-scrollbar-track {
+		@content;
+	}
+	& ::scrollbar-track {
+		@content;
+	}
+}
+
+@mixin scrollbar-thumb {
+	& ::-moz-scrollbar-thumb {
+		@content;
+	}
+	& ::-webkit-scrollbar-thumb {
+		@content;
+	}
+	& ::scrollbar-thumb {
+		@content;
+	}
+}
+
+@mixin scrollbar-track-piece {
+	& ::-moz-scrollbar-track-piece {
+		@content;
+	}
+	& ::-webkit-scrollbar-track-piece {
+		@content;
+	}
+	& ::scrollbar-track-piece {
+		@content;
+	}
+}
+//=======================================
+
+
+@mixin border-tr($radii) {
+    border-top-left-radius: $radii;
+    border-top-right-radius: $radii;
+}
+@mixin border-rr($radii) {
+    border-bottom-right-radius: $radii;
+    border-top-right-radius: $radii;
+}
+@mixin border-br($radii) {
+    border-bottom-left-radius: $radii;
+    border-bottom-right-radius: $radii;
+}
+@mixin border-lr($radii) {
+    border-bottom-left-radius: $radii;
+    border-top-left-radius: $radii;
+}
+
+//========================================
+
+@mixin font-size($a, $b) {
+    $a: $a + rem;
+    $x: calc($b / 3.2 );
+    $x: $x + vw;
+    font-size: min($a , $x);
+}
+@mixin width($a, $b) {
+    $a: $a + px;
+    $x: $b + vw;
+    width: min($a, $x);
+}
+@mixin height($a, $b) {
+    $a: $a + px;
+    $x: $b + vw;
+    height: min($a, $x);
+}
