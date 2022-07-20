@@ -54,7 +54,7 @@
         max-width: $maxWidht;
     }
 
-    h1 {
+    h2 {
         @include font-size(2, 20);
         @include font($fontGot, 900);
         max-width: max(250px, 80vw);
@@ -76,7 +76,7 @@
         }
     }
     p {
-        @include font-size(1.2, 16);
+        @include font-size(1, 12);
         @include font($fontGot, 400);
         max-width: max(250px, 75vw);
         max-height: 130px;
@@ -96,7 +96,7 @@
     }
     a {
         display: inline-block;
-        @include font-size(1.2, 16);
+        @include font-size(1, 14);
         @include font($fontGot, 400);
         text-transform: uppercase;
         margin-bottom: 15px;

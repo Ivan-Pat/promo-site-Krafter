@@ -4,6 +4,13 @@ html {
 }
 body {}
 
+.body-wrapper {
+    width: 100%;
+    max-width: $maxWidthWindow;
+    margin: 0 auto;
+}
+
 .body-fixed {
     position: fixed;
 }
+.main {}
