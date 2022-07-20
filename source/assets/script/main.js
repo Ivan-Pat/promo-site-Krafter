@@ -87,9 +87,39 @@ let sliderPromo = new Swiper('.promo-slider', {
         //   autoHeight: false,
         // }
       },
-    
-      
-   
   });
 
 /* END ///home page slider-promo*/
+
+/*home page slide products*/
+const sliderProducts = new Swiper(".product__slider", {
+  modules: [Navigation, Pagination],
+  navigation: {
+    nextEl: '.swiper-button-prev',
+    prevEl: '.swiper-button-next',
+
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  spaceBetween: 20,
+  // loop: true,
+  grabCursor: true,
+  slidesPerView: 1,
+  centeredSlides: false,
+  initialSlide: 2,
+  // centeredSlides: true,
+  breakpoints: {
+    960: {
+      slidesPerView: 2,
+      //slidesPerGroup: 1,
+      // watchOverflow: false, 
+      // enabled: true,
+      // loop: false,
+      // grabCursor: true,
+    }, 
+  }
+})
+
+/* END ///home page slide products*/

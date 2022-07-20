@@ -1,0 +1,77 @@
+.product-card {
+    width: 100%;
+    max-width: 550px;
+    max-height: auto;
+    box-shadow: -3px 0 15px 5px rgba($color: #ccc, $alpha: 0.5);
+    img {
+        width: 100%;
+        height: min(385px, 70vw);
+        object-fit: cover;
+    }
+
+}
+.product-card__title {
+    width: 100%;
+    padding: 10px;
+
+    h2 {
+        @include font-size(1rem, 14);
+        @include font($fontGot, 900);
+        text-transform: uppercase;
+        max-width: 500px;
+        max-height: 40px;
+        overflow: hidden;
+        margin-bottom: 20px;
+        text-align: center
+    }
+    p {
+        @include font-size(1rem, 12);
+        @include font($fontGot, 400);
+        text-align: justify;
+        max-height: 150px;
+        overflow: hidden;
+    }
+}
+.product-card__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 10px;
+    border-top: 2px solid #ccc;
+
+    p {
+        @include font-size(1, 14);
+        @include font($fontGot, 400);
+        text-align: start;
+        width: 100%;
+        margin-right: 10px;
+        max-height: 50px;
+        overflow: hidden;
+    }
+    span {
+        @include font-size(1.1rem, 12);
+        font-weight: 900;
+
+    }
+}
+.product-card__container--button {
+    display: inline-block;
+    width: 150px;
+    max-width: 150px;
+    height: 50px;
+    max-height: 50px;
+    padding: 5px;
+    background: $colorYellow;
+    border-radius: 10px;
+    overflow: hidden;
+    @include font($fontGot, 600);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+
+    &:hover {
+        box-shadow: -3px 0 15px 5px rgba($color: #ccc, $alpha: 0.5);
+        cursor: pointer;
+    }
+    
+}
