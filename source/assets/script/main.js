@@ -1,18 +1,91 @@
+'use strict '
+
+import CastomSelect from "./modules/custom-select";
+import JustValidate from 'just-validate';
+import Swiper, { Navigation, Pagination } from "swiper";
+import InputMask from "inputmask";
+
+
+
+document.addEventListener('DOMContentLoaded', ()=> {
+  /*  home page custom select */
+
+const select1 = new CastomSelect("#select-1")
+/* END /// home page custom select */
 
 /* button nav-menu mobile*/
 
 const burger = document.querySelector(".burger")
 burger.addEventListener("click", clickBurger)
 const navBody = document.querySelector(".header__nav") 
-const DOM = document.querySelector('body')
+const body = document.querySelector('body')
 function clickBurger(e) {
     let event = e.target
     navBody.classList.toggle('nav_active');
     burger.classList.toggle('burger_active');
-    DOM.classList.toggle("body-fixed")
+    body.classList.toggle("body-fixed")
 }
 
 /* END ///  button nav-menu mobile */
+
+/* section pop-up*/
+const buttonTel = document.querySelectorAll(".button-tel")
+for (let i =0; i < buttonTel.length; i++) {
+  buttonTel[i].addEventListener("click", clickPopUp);
+}
+const widgetLinkBut = document.querySelector(".widget-link-butt").addEventListener("click", clickPopUp)
+const popUp = document.querySelector(".pop-up")
+
+const popUpBtnClose =document.querySelector(".pop-up__button--close").addEventListener("click", clickPopUp);
+
+function clickPopUp() {
+  popUp.classList.toggle("pop-up_acive");
+  body.classList.toggle("body-fixed")
+}
+/*validate tel*/ 
+
+let inputsTel = document.querySelectorAll("input[type='tel']");
+let im = new InputMask("+ 7 (999) 999-99-99")
+im.mask(inputsTel);
+/*validate name*/
+
+
+
+const validation = new JustValidate("#form", {
+  errorFieldCssClass: 'is-invalid',
+  tooltip: {position: 'right'},
+})
+
+validation.addField("#popUpName", [
+  {
+    rule: 'minLength',
+    value: 2,
+    errorMessage: "Минимум 2 сивола"
+  }, 
+  {
+    rule: 'required',
+    errorMessage: "Обязательное поле"
+  }
+]).addField('#popUpTel', [
+  {
+    rule: 'required',
+    errorMessage: "Обязательное поле",
+  },  
+])
+/*END ///  section pop-up*/
+
+/*    wiget-nav*/
+const wigetNav = document.querySelector(".widget-navigation");
+const widgetNavButton = document.querySelector(".widget-navigation-button")
+widgetNavButton.addEventListener("click", clickWidget)
+
+function clickWidget() {
+  wigetNav.classList.toggle("widget-navigation_active");
+  widgetNavButton.classList.toggle("widget-but_active")
+}
+
+
+/* END   wiget-nav*/
 
 /* button list footer*/
 const footerBut = document.querySelector('.footer__body').addEventListener('click', clickFooterBtn);
@@ -29,28 +102,9 @@ function clickFooterBtn(e) {
 
 /* END /// button list footer*/
 
-//* input validate*/
-// import Inputmask from "./../../../node_modules/inputmask";
-// import JustValidate from './../../../node_modules/just-validate/dist/just-validate.production.min';
-// const inputSubscribe = document.querySelector(".footer__form");
-
-// const validation = new JustValidate(inputSubscribe);
-
-// validation.addField("#email-1", [
-//     {
-//         rule: 'required',
-//         errorMessage: 'Email is required',
-//       },
-//       {
-//         rule: 'email',
-//         errorMessage: 'Email is invalid!',
-//       },
-//     ])
-
-//* END /// input tel mask*/
 
 /*home page slider-promo*/
-import Swiper, { Navigation, Pagination } from "swiper";
+
 
 let sliderPromo = new Swiper('.promo-slider', {
     modules: [Navigation, Pagination],
@@ -77,15 +131,6 @@ let sliderPromo = new Swiper('.promo-slider', {
           loop: false,
           grabCursor: true,
         }, 
-        // 1440: {
-        //   //loopedSlides: 9,
-        //   slidesPerView: 4,
-        //   watchOverflow: false,
-  
-        //   //slidesPerGroup: 1,
-        //   //slidesPerColumn: 2,
-        //   autoHeight: false,
-        // }
       },
   });
 
@@ -104,22 +149,44 @@ const sliderProducts = new Swiper(".product__slider", {
     clickable: true,
   },
   spaceBetween: 20,
-  // loop: true,
+  loop: true,
   grabCursor: true,
   slidesPerView: 1,
   centeredSlides: false,
   initialSlide: 2,
-  // centeredSlides: true,
   breakpoints: {
     960: {
       slidesPerView: 2,
-      //slidesPerGroup: 1,
-      // watchOverflow: false, 
-      // enabled: true,
-      // loop: false,
-      // grabCursor: true,
     }, 
   }
 })
 
 /* END ///home page slide products*/
+
+
+/* ///scroll to top */
+const scrollTop = document.querySelector(".scroll-top")
+scrollTop.addEventListener("click", clickScrollTop)
+
+function clickScrollTop(){
+  window.scrollTo({
+    top,
+    behavior: "smooth"
+  })
+}
+window.addEventListener("scroll", windowScroll)
+
+function windowScroll(){
+
+  if (window.pageYOffset > 800 && !scrollTop.classList.contains("scroll-top_active")) {
+    
+    scrollTop.classList.toggle("scroll-top_active")
+  } else if (window.pageYOffset < 800 && scrollTop.classList.contains("scroll-top_active")) {
+    scrollTop.classList.toggle("scroll-top_active")
+  }
+}
+/* END ///scroll to top */
+
+
+
+})

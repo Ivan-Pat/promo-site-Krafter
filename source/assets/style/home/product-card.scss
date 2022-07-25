@@ -15,17 +15,21 @@
     padding: 10px;
 
     h2 {
-        @include font-size(1rem, 14);
+        @include font-size(1, 14);
         @include font($fontGot, 900);
         text-transform: uppercase;
-        max-width: 500px;
+        max-width: 300px;
         max-height: 40px;
         overflow: hidden;
         margin-bottom: 20px;
-        text-align: center
+        text-align: center;
+        @include minMD {
+            max-width: 500px;
+        }
+        
     }
     p {
-        @include font-size(1rem, 12);
+        @include font-size(1, 12);
         @include font($fontGot, 400);
         text-align: justify;
         max-height: 150px;
@@ -41,7 +45,7 @@
     border-top: 2px solid #ccc;
 
     p {
-        @include font-size(1, 14);
+        @include font-size(1, 12);
         @include font($fontGot, 400);
         text-align: start;
         width: 100%;
@@ -50,7 +54,7 @@
         overflow: hidden;
     }
     span {
-        @include font-size(1.1rem, 12);
+        @include font-size(1, 12);
         font-weight: 900;
 
     }

@@ -1,0 +1,84 @@
+.widget-navigation {
+    position: fixed;
+    top: 210px;
+    height: auto;
+    right: 0;
+    z-index: 10;
+    background: #E0E0E0;
+    color: #fff;
+    font-family: $fontGot;
+    font-size: 1rem;
+    border-radius: 10px;
+    padding: 10px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease ;
+    display: none;
+
+    @include minLG {
+        display: block;
+    }
+
+    &__title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #000;
+        margin-bottom: 20px;
+    }
+    &-button {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: -52px;
+        width: 60px;
+        height: 60px;
+        padding: 5px;
+        transform: rotate(-90deg);
+        color: #424242;
+        font-size: 2.5rem;
+        background: #E0E0E0;
+        text-align: center;
+        border-radius: 5px;
+        &::before {
+            position: relative;
+            left: -3px;
+        }
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    a {
+        color: #000;
+    }
+    ul {
+        padding: 5px;
+        li {
+            margin-bottom: 10px;
+            color: #000;
+
+            &:hover {
+                cursor: pointer;
+            }
+            &:last-child {
+                
+                background: #fff;
+                display: inline-block;
+                border-radius: 10px;
+                height: 30px;
+                width: 30px;
+                text-align: center;
+                line-height: 1.8rem;
+            }
+        }
+    }
+}
+.widget-link-butt {
+    border-top: 2px solid #424242;
+    margin-top: 20px;
+    padding-top: 5px;
+}
+.widget-navigation_active {
+    transform: translateX(0);
+}
+.widget-but_active {
+    transform: rotate(90deg);
+}

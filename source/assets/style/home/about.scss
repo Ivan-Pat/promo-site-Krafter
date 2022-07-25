@@ -1,0 +1,30 @@
+.about {
+    width: 100%;
+    max-width: $maxWidthWindow;
+    height: auto;
+    margin: 0 auto;
+    padding: 50px 0 30px 0;
+}
+.about__wrapper {
+    width: 100%;
+    max-width: $maxWidht;
+    margin: 0 auto;
+    padding: 10px;
+
+    h2 {
+        @include font($fontGot, 900);
+        @include font-size(2, 16);
+        text-transform: uppercase;
+        max-width: 60%;
+        max-height: min(40px, 7vw);
+        overflow: hidden;
+        margin-bottom: 30px;
+    }
+    p {
+        @include font($fontGot, 400);
+        @include font-size(1, 12);
+        max-height: 400px;
+        text-align: justify;
+        overflow: hidden;
+    }
+}

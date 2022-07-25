@@ -27,11 +27,11 @@ export default ()=> {
         webpClass: ".webp",
         noWebpClass: ".no-webp"
     }))
-    .pipe(autoprefixer({
+    .pipe(glob.plugins.if(glob.isProd, autoprefixer({
         grid: true,
         overrideBrowserslist: ["last 3 versions"],
         cascade: true,
-    }))
+    })))
     .pipe( glob.plugins.if(glob.isProd, cleancss()))
     .pipe(glob.plugins.if(glob.isProd, 
         glob.plugins.rename({

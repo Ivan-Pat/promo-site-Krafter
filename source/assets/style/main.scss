@@ -4,6 +4,9 @@
 @import "./common/_fonts";
 @import "./common/_fontello";
 @import "./common/_basic";
+@import "./common/_pop-up.scss";
+@import "./common/widget-nav";
+@import "./common/_header";
 @import "./common/custom-select";
 @import "./common/_header";
 @import "./common/swiper-bundle";
@@ -11,6 +14,12 @@
 @import "./home/banner";
 @import "./home/products";
 @import "./home/product-card";
+@import "./home/professional";
+@import "./home/projects";
+@import "./home/news";
+@import "./home/about";
+@import "./common/scroll-top";
+
 
 
 @import "./common/_footer";

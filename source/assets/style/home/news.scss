@@ -1,0 +1,129 @@
+.news {
+    width: 100%;
+    max-width: $maxWidthWindow;
+    background: #f6f6f9;
+    padding: 50px 0 0 0;
+}
+.news__title {
+    padding: 0 10px;
+    @include minMD {
+        display: flex;
+        justify-content: space-between
+    }
+
+    h2 {
+        @include font($fontGot, 900);
+        @include font-size(2, 16);
+        text-transform: uppercase;
+        max-width: 60%;
+        max-height: min(40px, 7vw);
+        overflow: hidden;
+        margin-bottom: 30px;
+    }
+    width: 100%;
+    max-width: $maxWidht;
+    margin: 0 auto;
+}
+
+.news__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: auto;
+    max-width: $maxWidht;
+    margin: 0 auto;
+    padding: 10px;
+
+    @include minMD {
+        flex-wrap: wrap;
+        flex-direction: row;
+        max-width: 600px;
+        
+    }
+
+    @include minVal(1200px) {
+        max-width: $maxWidht;
+        flex-direction: column;
+        max-height: 600px;
+        justify-content: space-between;
+    }
+}
+.news__box {
+    width: 100%;
+    height: auto;
+    max-width: 275px;
+    max-height: auto;
+    overflow: hidden;
+    img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover
+    }
+    span {
+        display: inline-block;
+        @include font-size(0.8, 10);
+        @include font($fontGot, 400);
+        text-align: justify;
+        max-height: 30px;
+        max-width: 80%;
+        overflow: hidden;
+        padding: 5px;
+        color: #424242;
+    }
+    h3 {
+        max-width: 300px;
+        max-height: 30px;
+        margin-bottom: 10px;
+        margin-top: 5px;
+        overflow: hidden;
+        @include font-size(0.9, 12);
+        @include font($fontGot, 900);
+        text-transform: uppercase;
+        text-align: start;
+        padding: 0 5px;
+    }
+    p {
+        @include font-size(0.8, 10);
+        @include font($fontGot, 400);
+        text-align: justify;
+        max-height: 150px;
+        overflow: hidden;
+        margin-bottom: 20px;
+        padding: 5px;
+
+        @include minMD {
+            display: none;
+        }
+    }
+}
+.news__box:first-child {
+
+    
+
+    @include minMD {
+        width: 100%;
+        max-width: 550px;
+        height: 100%;
+        max-height: 630px;
+
+        img {
+            height: 360px;
+        }
+        p {
+            display: inline-block;
+        }
+    }
+    
+}
+.button--news {
+    display: none;
+    
+    @include minMD {
+        display: block;
+        color: #000;
+    }
+    
+}

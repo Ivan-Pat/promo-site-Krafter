@@ -6,22 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./script/checkWebp.js"></script>
     <link rel="stylesheet" href="./style/main.css">
-    <title>Document</title>
+    <link rel="icon" href="favicon.ico">
+    <title>Krafter</title>
 </head>
 <body>
+   
     <div class="body-wrapper">
         @@include("./assets/html/common/header.html")
         <main class="main">
             @@include("./assets/html/home/promo-slider.html")
             @@include("./assets/html/home/banner.html")
             @@include("./assets/html/home/products.html")
+            @@include("./assets/html/home/professional.html")
+            @@include("./assets/html/home/projects.html")
+            @@include("./assets/html/home/news.html")
+            @@include("./assets/html/home/about.html")
         </main>
 
         
         @@include("./assets/html/common/footer.html")
     </div>
-    
-
+    <!--  -->
+    @@include("./assets/html/common/widget-nav.html")
+    @@include("./assets/html/common/scroll-top.html")
+    @@include("./assets/html/common/pop-up.html")
     <script src="./script/main.js" ></script>
 </body>
 </html>
