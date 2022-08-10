@@ -1,8 +1,13 @@
 <section class="professional" >
     <div class="professional__wrapper">
         <div class="professional__container">
-            <img src="@img/professional-bg1.png" alt="background">
-            <div class="professional__container--title">
+            
+            <picture>
+                <source media="(max-width:450px)" srcset="images/professional/professional-bg1-mobile.webp" type="image/webp">
+                <source srcset="images/professional/professional-bg1.webp" type="image/webp">
+                <img src="images/professional/professional-bg1.png" alt="background">
+            </picture>
+            <div class="professional__title">
                 <h2>профессионалы </h2>
                 <p> Это самое важное в нашей работе. Благодоря нашим специалистам, высокого уровня квалификации 
                     мы создали то, что имеем. <br>Оборудование - да, логистика -да, но не смотря на все составляющие,
@@ -15,7 +20,11 @@
             </div>
         </div>
         <div class="professional__box">
-            <img src="@img/professional-bg2.png" alt="background">
+            <picture>
+                <source media="(max-width:450px)" srcset="images/professional/professional-bg2-mobile.webp" type="image/webp">
+                <source srcset="images/professional/professional-bg2.webp" type="image/webp">
+                <img src="images/professional/professional-bg2.png" alt="background">
+            </picture>
         </div>
     </div>
 </section>

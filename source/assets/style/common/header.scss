@@ -65,9 +65,9 @@
     display: none;
     @include minMD {
         display: block;
-        padding: 0 5px 0 25px;
+        padding: 5px 5px 5px 25px;
         max-width: 250px;
-        max-height: 1.2rem;
+        max-height: 1.5rem;
         overflow: hidden;
         position: relative;
         a {
@@ -114,6 +114,8 @@
     font-family: $fontGot;
     font-weight: 600;
     margin-left: 20px;
+
+    outline-color: #000;
     &:hover {
         cursor: pointer;
         box-shadow: -2px 0px 15px  3px rgba($color: $colorYellow, $alpha: 0.5);
@@ -224,6 +226,7 @@
         color: #000;
         font-family: $fontGot;
         font-weight: 600;
+        outline-color: #000;
         &:hover {
             box-shadow: -2px 0px 15px  3px rgba($color: $colorYellow, $alpha: 0.5);
         }
@@ -271,6 +274,9 @@
             height: auto;
             min-height: auto;
         }
+    }
+    li {
+        padding: 3px;
     }
     a {
         position: relative;

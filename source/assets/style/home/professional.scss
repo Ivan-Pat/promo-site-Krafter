@@ -40,8 +40,9 @@
         object-fit: cover;
     }
 }
-.professional__container--title {
+.professional__title {
     max-width: 500px;
+    padding: 5px;
     overflow: hidden;
 
     h2 {
@@ -83,7 +84,14 @@
     padding: 5px;
     overflow: hidden;
     text-transform: uppercase;
+    outline-color: #fff;
     @include font-size(1, 12);
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 0 0 10px rgba($colorYellow, $alpha: 1.0) ;
+    }
+
 }
 .professional__box {
     // flex: 0 0 50%;

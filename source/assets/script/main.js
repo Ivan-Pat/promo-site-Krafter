@@ -4,7 +4,7 @@ import CastomSelect from "./modules/custom-select";
 import JustValidate from 'just-validate';
 import Swiper, { Navigation, Pagination } from "swiper";
 import InputMask from "inputmask";
-
+ 
 
 
 document.addEventListener('DOMContentLoaded', ()=> {
@@ -34,13 +34,21 @@ for (let i =0; i < buttonTel.length; i++) {
   buttonTel[i].addEventListener("click", clickPopUp);
 }
 const widgetLinkBut = document.querySelector(".widget-link-butt").addEventListener("click", clickPopUp)
-const popUp = document.querySelector(".pop-up")
+const popUp = document.querySelector("#popUp")
 
-const popUpBtnClose =document.querySelector(".pop-up__button--close").addEventListener("click", clickPopUp);
+const popUpBtnClose = document.querySelector(".pop-up__close");
+popUpBtnClose.addEventListener("click", clickPopUp);
 
 function clickPopUp() {
   popUp.classList.toggle("pop-up_acive");
-  body.classList.toggle("body-fixed")
+  body.classList.toggle("body-fixed");
+
+  popUp.focus()
+
+  let popUpBtnSend = document.querySelector('.pop-up__button');
+    popUpBtnSend.onblur = ()=> {
+      clickPopUp()
+  }
 }
 /*validate tel*/ 
 

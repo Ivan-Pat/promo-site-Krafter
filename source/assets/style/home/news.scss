@@ -3,6 +3,7 @@
     max-width: $maxWidthWindow;
     background: #f6f6f9;
     padding: 50px 0 0 0;
+    
 }
 .news__title {
     padding: 0 10px;
@@ -57,6 +58,7 @@
     max-width: 275px;
     max-height: auto;
     overflow: hidden;
+    outline-color: $colorYellow;
     img {
         width: 100%;
         height: 150px;
@@ -124,6 +126,7 @@
     @include minMD {
         display: block;
         color: #000;
+        outline-color: #000;
     }
     
 }

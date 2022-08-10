@@ -151,7 +151,7 @@
     font-family: $fontGot;
     color: #fff;
     background: #303133;
-    outline: none;
+    outline-color: $colorYellow;
     &:focus {
         background: #424242;
     }
@@ -194,6 +194,7 @@
     }
     li {
         margin-bottom: 5px;
+        padding: 3px;
     }
     ul {
         max-width: 300px;

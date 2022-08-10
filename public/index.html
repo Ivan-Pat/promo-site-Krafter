@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./script/checkWebp.js"></script>
     <link rel="stylesheet" href="./style/main.css">
-    <link rel="icon" href="favicon.ico">
+    
+    <link rel="icon" href="./images/favicon/favicon.ico">
+    <link rel="apple-touch-icon" href="./images/favicon/apple-touch-icon.png">
+    <link rel="icon" href="./images/favicon/favicon.svg">
     <title>Krafter</title>
 </head>
 <body>
@@ -75,15 +78,33 @@
 
                 <h2>антивандальные конструкции из HPL пластика </h2>
                 <p>Компания Kermi разыгрывает 200 сертификатов на скидку в размере 
-                    -10% на покупку стальных панельных радиаторов Kermi.
-
-                    
+                    -10% на покупку стальных панельных радиаторов Kermi.   
                 </p>
                 <a href="#">подробнее...</a>
-                <!-- <picture><source srcset="images/slide-mobile.webp" type="image/webp"><img src="images/slide-mobile.png" alt="background"></picture> -->
             </div>
 
-            <picture><source srcset="images/slide.webp" type="image/webp"><img src="images/slide.png" alt="background"></picture>
+            <picture>
+                <source media="(max-width:450px)" srcset="images/slide-mobile.webp" type="image/webp">
+                <source media="(max-width:960px)" srcset="images/slide-tablet.webp" type="image/webp">
+                <source srcset="images/slide.webp" type="image/webp">
+                <img src="images/slide.png" alt="background">
+            </picture>
+        </div>
+
+        <div class="promo-slider__slide swiper-slide">
+            <div class="promo-slider__slide--title">
+                <h2>антивандальные конструкции из HPL пластика </h2>
+                <p>Компания Kermi разыгрывает 200 сертификатов на скидку в размере 
+                    -10% на покупку стальных панельных радиаторов Kermi.
+                </p>
+                <a href="#">подробнее...</a>
+                <picture>
+                    <source media="(max-width:450px)" srcset="images/slide-mobile.webp" type="image/webp">
+                    <source media="(max-width:960px)" srcset="images/slide-tablet.webp" type="image/webp">
+                    <source srcset="images/slide.webp" type="image/webp">
+                    <img src="images/slide.png" alt="background">
+                </picture>
+            </div>
         </div>
 
         <div class="promo-slider__slide swiper-slide">
@@ -96,21 +117,12 @@
                     
                 </p>
                 <a href="#">подробнее...</a>
-                <picture><source srcset="images/slide.webp" type="image/webp"><img src="images/slide.png" alt="background"></picture>
-            </div>
-        </div>
-
-        <div class="promo-slider__slide swiper-slide">
-            <div class="promo-slider__slide--title">
-
-                <h2>антивандальные конструкции из HPL пластика </h2>
-                <p>Компания Kermi разыгрывает 200 сертификатов на скидку в размере 
-                    -10% на покупку стальных панельных радиаторов Kermi.
-
-                    
-                </p>
-                <a href="#">подробнее...</a>
-                <picture><source srcset="images/slide.webp" type="image/webp"><img src="images/slide.png" alt="background"></picture>
+                <picture>
+                    <source media="(max-width:450px)" srcset="images/slide-mobile.webp" type="image/webp">
+                    <source media="(max-width:960px)" srcset="images/slide-tablet.webp" type="image/webp">
+                    <source srcset="images/slide.webp" type="image/webp">
+                    <img src="images/slide.png" alt="background">
+                </picture>
             </div>
         </div>
 
@@ -157,6 +169,11 @@
 
             <div class="banner__chapter--item chapter-box2">
                 <picture><source srcset="images/section-banner/banner-bg3-mobile.webp" type="image/webp"><img src="images/section-banner/banner-bg3-mobile.png" alt="background"></picture>
+                <picture>
+                    <source media="(max-width:720px)" srcset="images/section-banner/banner-bg3-mobile.webp" type="image/webp">
+                    <source srcset="images/section-banner/banner-bg3.webp" type="image/webp">
+                    <img src="images/section-banner/banner-bg3-mobile.png" alt="background">
+                </picture>
                 <h2>Столешницы HPL </h2>
             </div>
 
@@ -193,7 +210,7 @@
     </div>
     <div class="product-card__container">
         <p>Стоимость изготовления от <span>9 500р./м</span></p>
-        <button class="product-card__container--button"> Подробнее</button>
+        <button class="product-card__button"> Подробнее</button>
     </div>
 </div>
                 <div class="product-card swiper-slide">
@@ -206,7 +223,7 @@
     </div>
     <div class="product-card__container">
         <p>Стоимость изготовления от <span>9 500р./м</span></p>
-        <button class="product-card__container--button"> Подробнее</button>
+        <button class="product-card__button"> Подробнее</button>
     </div>
 </div>
 
@@ -220,7 +237,7 @@
     </div>
     <div class="product-card__container">
         <p>Стоимость изготовления от <span>9 500р./м</span></p>
-        <button class="product-card__container--button"> Подробнее</button>
+        <button class="product-card__button"> Подробнее</button>
     </div>
 </div>
                 <div class="product-card swiper-slide">
@@ -233,7 +250,7 @@
     </div>
     <div class="product-card__container">
         <p>Стоимость изготовления от <span>9 500р./м</span></p>
-        <button class="product-card__container--button"> Подробнее</button>
+        <button class="product-card__button"> Подробнее</button>
     </div>
 </div>
 
@@ -247,7 +264,7 @@
     </div>
     <div class="product-card__container">
         <p>Стоимость изготовления от <span>9 500р./м</span></p>
-        <button class="product-card__container--button"> Подробнее</button>
+        <button class="product-card__button"> Подробнее</button>
     </div>
 </div>
                 <div class="product-card swiper-slide">
@@ -260,7 +277,7 @@
     </div>
     <div class="product-card__container">
         <p>Стоимость изготовления от <span>9 500р./м</span></p>
-        <button class="product-card__container--button"> Подробнее</button>
+        <button class="product-card__button"> Подробнее</button>
     </div>
 </div>
 
@@ -274,7 +291,7 @@
     </div>
     <div class="product-card__container">
         <p>Стоимость изготовления от <span>9 500р./м</span></p>
-        <button class="product-card__container--button"> Подробнее</button>
+        <button class="product-card__button"> Подробнее</button>
     </div>
 </div>
                 <div class="product-card swiper-slide">
@@ -287,7 +304,7 @@
     </div>
     <div class="product-card__container">
         <p>Стоимость изготовления от <span>9 500р./м</span></p>
-        <button class="product-card__container--button"> Подробнее</button>
+        <button class="product-card__button"> Подробнее</button>
     </div>
 </div>
             </div>
@@ -303,8 +320,13 @@
             <section class="professional" >
     <div class="professional__wrapper">
         <div class="professional__container">
-            <picture><source srcset="images/professional-bg1.webp" type="image/webp"><img src="images/professional-bg1.png" alt="background"></picture>
-            <div class="professional__container--title">
+            
+            <picture>
+                <source media="(max-width:450px)" srcset="images/professional/professional-bg1-mobile.webp" type="image/webp">
+                <source srcset="images/professional/professional-bg1.webp" type="image/webp">
+                <img src="images/professional/professional-bg1.png" alt="background">
+            </picture>
+            <div class="professional__title">
                 <h2>профессионалы </h2>
                 <p> Это самое важное в нашей работе. Благодоря нашим специалистам, высокого уровня квалификации 
                     мы создали то, что имеем. <br>Оборудование - да, логистика -да, но не смотря на все составляющие,
@@ -317,7 +339,11 @@
             </div>
         </div>
         <div class="professional__box">
-            <picture><source srcset="images/professional-bg2.webp" type="image/webp"><img src="images/professional-bg2.png" alt="background"></picture>
+            <picture>
+                <source media="(max-width:450px)" srcset="images/professional/professional-bg2-mobile.webp" type="image/webp">
+                <source srcset="images/professional/professional-bg2.webp" type="image/webp">
+                <img src="images/professional/professional-bg2.png" alt="background">
+            </picture>
         </div>
     </div>
 </section>
@@ -328,9 +354,9 @@
 
     <div class="projects__wrapper">
 
-        <div class="projects__box">
+        <div class="projects__box" >
             <picture><source srcset="images/projects/projects-bg1.webp" type="image/webp"><img src="images/projects/projects-bg1.png" alt="background"></picture>
-            <div class="projects__box--inner">
+            <div class="projects__box--inner" tabindex="0">
                 <h3>Название проекта </h3>
                 <p>Сантихнические или санитарные перергородки Krafter - это лучшее решение для организации зо общественного ... 
                     
@@ -341,7 +367,7 @@
 
         <div class="projects__box">
             <picture><source srcset="images/projects/projects-bg2.webp" type="image/webp"><img src="images/projects/projects-bg2.png" alt="background"></picture>
-            <div class="projects__box--inner">
+            <div class="projects__box--inner" tabindex="0">
                 <h3>Название проекта </h3>
                 <p>Сантихнические или санитарные перергородки Krafter - это лучшее решение для организации зо общественного ... </p>
                 <a href="#"> посмотреть работу <i class="icon-left" ></i></a>
@@ -350,7 +376,7 @@
 
         <div class="projects__box">
             <picture><source srcset="images/projects/projects-bg3.webp" type="image/webp"><img src="images/projects/projects-bg3.png" alt="background"></picture>
-            <div class="projects__box--inner">
+            <div class="projects__box--inner" tabindex="0">
                 <h3>Название проекта </h3>
                 <p>Сантихнические или санитарные перергородки Krafter - это лучшее решение для организации зо общественного ... </p>
                 <a href="#"> посмотреть работу <i class="icon-left" ></i></a>
@@ -359,7 +385,7 @@
 
         <div class="projects__box">
             <picture><source srcset="images/projects/projects-bg4.webp" type="image/webp"><img src="images/projects/projects-bg4.png" alt="background"></picture>
-            <div class="projects__box--inner">
+            <div class="projects__box--inner" tabindex="0">
                 <h3>Название проекта </h3>
                 <p>Сантихнические или санитарные перергородки Krafter - это лучшее решение для организации зо общественного ... </p>
                 <a href="#"> посмотреть работу <i class="icon-left" ></i></a>
@@ -368,7 +394,7 @@
 
         <div class="projects__box">
             <picture><source srcset="images/projects/projects-bg5.webp" type="image/webp"><img src="images/projects/projects-bg5.png" alt="background"></picture>
-            <div class="projects__box--inner">
+            <div class="projects__box--inner" tabindex="0">
                 <h3>Название проекта </h3>
                 <p>Сантихнические или санитарные перергородки Krafter - это лучшее решение для организации зо общественного ... </p>
                 <a href="#"> посмотреть работу <i class="icon-left" ></i></a>
@@ -377,7 +403,7 @@
 
         <div class="projects__box">
             <picture><source srcset="images/projects/projects-bg6.webp" type="image/webp"><img src="images/projects/projects-bg6.png" alt="background"></picture>
-            <div class="projects__box--inner">
+            <div class="projects__box--inner" tabindex="0">
                 <h3>Название проекта </h3>
                 <p>Сантихнические или санитарные перергородки Krafter - это лучшее решение для организации зо общественного ... </p>
                 <a href="#"> посмотреть работу <i class="icon-left" ></i></a>
@@ -393,43 +419,54 @@
     </div>
     <div class="news__wrapper">
 
-        <div class="news__box">
-            <picture><source srcset="images/news/news-bg1.webp" type="image/webp"><img src="images/news/news-bg1.png" alt="background"></picture>
-            <span>01 января 2022 г.</span>
-            <h3>Обновленная фурнитура серии STELL  </h3>
-            <p>Когда речи касается чуственного и нужного отопления частного дома, пройти мимо привлекательных потребительных качеств ...
+        
+            <div class="news__box" tabindex="0">
+                <picture><source srcset="images/news/news-bg1.webp" type="image/webp"><img src="images/news/news-bg1.png" alt="background"></picture>
+                <span>01 января 2022 г.</span>
+                <h3>Обновленная фурнитура серии STELL  </h3>
+                <p>Когда речи касается чуственного и нужного отопления частного дома, пройти мимо привлекательных потребительных качеств ...
+    
+                </p>
+            </div>
+        
 
-            </p>
-        </div>
+        
+            <div class="news__box" tabindex="0">
+                <picture><source srcset="images/news/news-bg2.webp" type="image/webp"><img src="images/news/news-bg2.png" alt="background"></picture>
+                <span>01 января 2022 г.</span>
+                <h3>Обновленная фурнитура серии STELL </h3>
+                <p>Когда речи касается чуственного и нужного отопления частного дома, пройти мимо привлекательных потребительных качеств ...
+                </p>
+            </div>
+        
 
-        <div class="news__box">
-            <picture><source srcset="images/news/news-bg2.webp" type="image/webp"><img src="images/news/news-bg2.png" alt="background"></picture>
-            <span>01 января 2022 г.</span>
-            <h3>Обновленная фурнитура серии STELL </h3>
-            <p>Когда речи касается чуственного и нужного отопления частного дома, пройти мимо привлекательных потребительных качеств ...
-            </p>
-        </div>
+        
+            <div class="news__box" tabindex="0">
+                <picture><source srcset="images/news/news-bg3.webp" type="image/webp"><img src="images/news/news-bg3.png" alt="background"></picture>
+                <span>01 января 2022 г.</span>
+                <h3>Обновленная фурнитура серии STELL</h3>
+                <p>Когда речи касается чуственного и нужного отопления частного дома, пройти мимо привлекательных потребительных качеств ...</p>
+            </div>
+        
 
-        <div class="news__box">
-            <picture><source srcset="images/news/news-bg3.webp" type="image/webp"><img src="images/news/news-bg3.png" alt="background"></picture>
-            <span>01 января 2022 г.</span>
-            <h3>Обновленная фурнитура серии STELL</h3>
-            <p>Когда речи касается чуственного и нужного отопления частного дома, пройти мимо привлекательных потребительных качеств ...</p>
-        </div>
+        
+            <div class="news__box" tabindex="0">
+                <picture><source srcset="images/news/news-bg4.webp" type="image/webp"><img src="images/news/news-bg4.png" alt="background"></picture>
+                <span>01 января 2022 г.</span>
+                <h3>Обновленная фурнитура серии STELL</h3>
+                <p>Когда речи касается чуственного и нужного отопления частного дома, пройти мимо привлекательных потребительных качеств ...</p>
+            </div>
+        
 
-        <div class="news__box">
-            <picture><source srcset="images/news/news-bg4.webp" type="image/webp"><img src="images/news/news-bg4.png" alt="background"></picture>
-            <span>01 января 2022 г.</span>
-            <h3>Обновленная фурнитура серии STELL</h3>
-            <p>Когда речи касается чуственного и нужного отопления частного дома, пройти мимо привлекательных потребительных качеств ...</p>
-        </div>
 
-        <div class="news__box">
-            <picture><source srcset="images/news/news-bg5.webp" type="image/webp"><img src="images/news/news-bg5.png" alt="background"></picture>
-            <span>01 января 2022 г.</span>
-            <h3>Обновленная фурнитура серии STELL</h3>
-            <p>Когда речи касается чуственного и нужного отопления частного дома, пройти мимо привлекательных потребительных качеств ...</p>
-        </div>
+        
+            <div class="news__box" tabindex="0">
+                <picture><source srcset="images/news/news-bg5.webp" type="image/webp"><img src="images/news/news-bg5.png" alt="background"></picture>
+                <span>01 января 2022 г.</span>
+                <h3>Обновленная фурнитура серии STELL</h3>
+                <p>Когда речи касается чуственного и нужного отопления частного дома, пройти мимо привлекательных потребительных качеств ...</p>
+            </div>
+        
     </div>
 </section>
             <section class="about">
@@ -542,13 +579,11 @@
         &#10094
     </button>
 </div>
-    <div class="pop-up"  autofocus>
+    <div class="pop-up" id="popUp" tabindex="0">
     <div class="pop-up__wrapper">
-        <button class="pop-up__button--close">
-            <span></span>
-        </button>
+        <button class="pop-up__close">&#10006</button>
         <h2>Оставте свои контакты и наш менеджер свяжется с вами</h2>
-        <form class="pop-up__form" action="404.html" autocomplete="off" id="form">
+        <form class="pop-up__form" action="404.php" autocomplete="off" id="form">
             <label class="pop-up__form--item"   >
                 <span>Имя*</span>
                 <input class="pop-up__input" id="popUpName" type="text" name="Имя"  autocomplete="off">

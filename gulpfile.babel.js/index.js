@@ -26,6 +26,7 @@ import fontOtf from "./tasks/fontOtf";
 import fontFase from "./tasks/fontFase";
 import copyJS from "./tasks/copy";
 import ZIP from "./tasks/zip";
+import favicon from "./tasks/favicon";
 
 
 
@@ -40,7 +41,7 @@ function watcher() {
 }
 
 const fonts = gulp.series(fontOtf, fonttF, fontFase)
-const mainTask = gulp.parallel( html, scss, script, copyJS, images, svg, fonts ) 
+const mainTask = gulp.parallel( html, scss, script, copyJS, images, svg, fonts, favicon ) 
 
 const build = gulp.series(reset, mainTask, gulp.parallel(watcher, server));
 const production = gulp.series(reset, mainTask)

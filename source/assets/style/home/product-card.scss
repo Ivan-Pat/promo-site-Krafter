@@ -21,8 +21,8 @@
         max-width: 300px;
         max-height: 40px;
         overflow: hidden;
-        margin-bottom: 20px;
         text-align: center;
+        margin: 0 auto 20px;
         @include minMD {
             max-width: 500px;
         }
@@ -59,7 +59,7 @@
 
     }
 }
-.product-card__container--button {
+.product-card__button {
     display: inline-block;
     width: 150px;
     max-width: 150px;
@@ -72,7 +72,8 @@
     @include font($fontGot, 600);
     font-size: 0.8rem;
     text-transform: uppercase;
-
+    outline-color: #000;
+    
     &:hover {
         box-shadow: -3px 0 15px 5px rgba($color: #ccc, $alpha: 0.5);
         cursor: pointer;

@@ -12,9 +12,7 @@
     z-index: 10;
     background: rgba(#424424, .5) ;
 }
-.pop-up * {
-    outline: none;
-}
+
 .pop-up_acive {
     display: flex;
 }
@@ -53,6 +51,7 @@
 }
 .pop-up__form--item {
     margin-bottom: 30px;
+    
 }
 .pop-up__title {
 
@@ -67,6 +66,7 @@
     padding: 5px 5px 5px 35px;
     border-radius: 10px;
     margin-left: 20px;
+    outline: none;
 
     &:focus {
         box-shadow: 0 0 10px $colorYellow;
@@ -87,38 +87,21 @@
         cursor: pointer;
         box-shadow: 0 0 20px rgba($colorYellow, $alpha: .5) ;
     } 
+    &:focus {
+        box-shadow: 0 0 20px $colorYellow;
+    }
 }
 
-.pop-up__button--close {
+.pop-up__close {
+    position: absolute;
     top: 30px;
     right: 30px;
     padding: 2px;
     width: 35px;
-    height: 33px;
-    position: absolute;
-
-    &:hover {
-        cursor: pointer;
-    }
-    span {
-        display: inline-block;
-        width: 100%;
-        transform: rotate(45deg);
-        height: 3px;
-        background: $colorYellow;
-        border-radius: 5px;
-        bottom: 0;
-        &::before {
-            content: "";
-            position: absolute;
-            height: 3px;
-            width: 100%;
-            left: 0px;
-            bottom: 0;
-            transform: rotate(90deg);
-            border-radius: 2px;
-            background: $colorYellow;
-        }
-    }
-
+    height: 35px;
+    cursor: pointer;
+    font-size: 30px;
+    line-height: 1;
+    font-weight: 900;
+    color: $colorYellow;
 }    
